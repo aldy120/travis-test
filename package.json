@@ -4,7 +4,7 @@
   "description": "",
   "main": "Is my friend cheating?.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test.js"
   },
   "keywords": [],
   "author": "",
