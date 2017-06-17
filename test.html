@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- mocha套件 start -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/expect.js/0.2.0/expect.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.0.2/chai.min.js"></script>
+<!-- mocha套件 end -->
+ 
+<!-- mocha初始化 start -->
+<div id="mocha"></div>
+<script>
+mocha.setup('bdd');
+</script>
+<!-- mocha初始化 end -->
+ 
+<!-- 自己的套件與測試 start -->
+<script src="test.js"></script>
+<!-- 自己的套件與測試 end -->
+ 
+<!-- 執行測試 start -->
+<script>
+mocha.checkLeaks();
+mocha.run();
+</script>
+
+</body>
+</html>
